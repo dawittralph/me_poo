@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
  *
  * @author Dawitt Ralph
  */
-public class Pessoa {
+public class Pessoa extends Endereco{
     private String nome;
     private String dtNasc;
     private int idade;
@@ -20,8 +20,9 @@ public class Pessoa {
         dtNasc = JOptionPane.showInputDialog("Informe a data de nascimento");
         idade = Integer.parseInt(JOptionPane.showInputDialog("Informe a idade"));
         rg = JOptionPane.showInputDialog("Informe o R.G.");
-        cpf = JOptionPane.showInputDialog("Informe o o C.P.f.");
-        fone = JOptionPane.showInputDialog("Informe o telfone");
+        cpf = JOptionPane.showInputDialog("Informe o o C.P.F.");
+        fone = JOptionPane.showInputDialog("Informe o telefone");
+        super.cadastrarEndereco();
     }
     
     public String exibirPessoa(){

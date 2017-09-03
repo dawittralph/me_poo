@@ -23,7 +23,8 @@ public class Professor extends Pessoa{
     }
     
     public void exibirProfessor(){
-        JOptionPane.showMessageDialog(null, super.exibirPessoa()
+        JOptionPane.showMessageDialog(null, "Dados de Professor"
+              + "\n" + super.exibirPessoa()
               + "\nLattes: " + lattes
               + "\nE-mail: " + email
               + "\nFormação: " + formacao

@@ -15,7 +15,7 @@ public class Endereco {
     private String uf;
     private String cep;
     
-    private void cadastrarEndereco(){
+    public void cadastrarEndereco(){
         logradouro = JOptionPane.showInputDialog("Informe o logradouro");
         numero = JOptionPane.showInputDialog("Informe o número");
         complemento = JOptionPane.showInputDialog("Informe o complemento");
@@ -25,7 +25,7 @@ public class Endereco {
         cep = JOptionPane.showInputDialog("Informe o C.E.P.");
     }
     
-    private void exibirEndereco(){
+    public void exibirEndereco(){
         JOptionPane.showMessageDialog(null,"Logradouro: " + logradouro
             + "\nNúmero: " + numero
             + "\nComplemento: " + complemento

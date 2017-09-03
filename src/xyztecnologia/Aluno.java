@@ -17,8 +17,9 @@ public class Aluno extends Pessoa{
     }
     
     public void exibirAluno(){
-        JOptionPane.showMessageDialog(null, super.exibirPessoa()
-              + "\nMatrícula " + matricula
+        JOptionPane.showMessageDialog(null, "Dados do Aluno"
+              + "\n" + super.exibirPessoa()
+              + "\nMatrícula: " + matricula
               + "\nCelular: " + celular);
     }
     
