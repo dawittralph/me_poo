@@ -21,6 +21,10 @@ public class Pessoa extends Endereco{
         idade = Integer.parseInt(JOptionPane.showInputDialog("Informe a idade"));
         rg = JOptionPane.showInputDialog("Informe o R.G.");
         cpf = JOptionPane.showInputDialog("Informe o o C.P.F.");
+        while (cpf.length() != 11) {
+            JOptionPane.showMessageDialog(null, "O C.P.F. informado inválido");
+            cpf = JOptionPane.showInputDialog("Entre com o C.P.F.");
+        }
         fone = JOptionPane.showInputDialog("Informe o telefone");
         super.cadastrarEndereco();
     }

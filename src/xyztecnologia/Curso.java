@@ -12,11 +12,13 @@ public class Curso{
     private double valor;
     private String descricao;
     
+    //Criação de um objeto pr do tipo Professor.
     Professor pr = null;
     Professor professor[] = new Professor[1];
     
+    //Criação de um objeto al do tipo Aluno.
     Aluno al = null;
-    Aluno aluno[] = new Aluno[2];
+    Aluno aluno[] = new Aluno[30];
     
     public void cadastrarCurso(){
         nome = JOptionPane.showInputDialog("Informe o nome do curso");
@@ -28,7 +30,7 @@ public class Curso{
         pr.cadastrarProfessor();
         professor[0] = pr;
         
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < aluno.length; i++) {
             al = new Aluno();
             al.cadastrarAluno();
             aluno[i] = al;
@@ -39,9 +41,10 @@ public class Curso{
         JOptionPane.showMessageDialog(null,"Nome: " + nome
               + "\nCarga Horária: " + cargaHoraria
               + "\nValor: R$" + valor
-              + "\nDescrição: " + descricao);
+              + "\nDescrição: " + descricao
+              + "\nA quantidade mínima de alunos é de: " + Math.round(professor[0].retornaSalarioBruto()/ valor));
         professor[0].exibirProfessor();
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < aluno.length; i++) {
             aluno[i].exibirAluno();
         }
     }
