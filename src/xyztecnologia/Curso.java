@@ -18,7 +18,7 @@ public class Curso{
     
     //Criação de um objeto al do tipo Aluno.
     Aluno al = null;
-    Aluno aluno[] = new Aluno[1];
+    Aluno aluno[] = new Aluno[30];
     
     public void cadastrarCurso(){
         nome = JOptionPane.showInputDialog("Informe o nome do curso");
