@@ -20,19 +20,22 @@ public class Escola {
         //Inicialização do Objeto Curso
         Curso curso = new Curso();
         
-        while(opc!=3){
+        while(opc!=4){
          opc = Integer.parseInt(JOptionPane.showInputDialog(""
               + "XYZ Tecnologia"
               + "\n1 - Cadastrar Curso"
               + "\n2 - Exibir Curso"
-              + "\n3 - Sair"));
+              + "\n3 - Custo Mínimo"
+              + "\n4 - Sair"));
                 
             switch(opc){
                 case 1:curso.cadastrarCurso();
                 break;
                 case 2:curso.exibirCurso();
                 break;
-                case 3:JOptionPane.showMessageDialog(null, "Saindo do sistema");
+                case 3:curso.calcularCustoMinimo();
+                break;
+                case 4:JOptionPane.showMessageDialog(null, "Saindo do sistema");
                 break;
                 default:JOptionPane.showMessageDialog(null, "As opções são somente de 1 a 3");
             }

@@ -18,7 +18,7 @@ public class Curso{
     
     //Criação de um objeto al do tipo Aluno.
     Aluno al = null;
-    Aluno aluno[] = new Aluno[30];
+    Aluno aluno[] = new Aluno[1];
     
     public void cadastrarCurso(){
         nome = JOptionPane.showInputDialog("Informe o nome do curso");
@@ -37,12 +37,15 @@ public class Curso{
         }
     }
     
+    public void calcularCustoMinimo(){
+        JOptionPane.showMessageDialog(null, "A quantidade mínima de alunos é de: " + Math.round(professor[0].retornaSalarioBruto()/ valor));
+    }
+    
     public void exibirCurso(){
         JOptionPane.showMessageDialog(null,"Nome: " + nome
               + "\nCarga Horária: " + cargaHoraria
               + "\nValor: R$" + valor
-              + "\nDescrição: " + descricao
-              + "\nA quantidade mínima de alunos é de: " + Math.round(professor[0].retornaSalarioBruto()/ valor));
+              + "\nDescrição: " + descricao);
         professor[0].exibirProfessor();
         for (int i = 0; i < aluno.length; i++) {
             aluno[i].exibirAluno();

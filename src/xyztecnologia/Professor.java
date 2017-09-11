@@ -39,10 +39,11 @@ public class Professor extends Pessoa{
         especialidade = JOptionPane.showInputDialog("Informe a especialidade do professor");
         salario = Double.parseDouble(JOptionPane.showInputDialog("Informe o salário do professor"));
         tipo = Integer.parseInt(JOptionPane.showInputDialog("Informe o tipo do professor"));
+        calcularSalario();
     }
     
     public void exibirProfessor(){
-        JOptionPane.showMessageDialog(null, "Dados de Professor"
+        JOptionPane.showMessageDialog(null, "Dados do Professor"
               + "\n" + super.exibirPessoa()
               + "\nLattes: " + lattes
               + "\nE-mail: " + email
@@ -60,7 +61,7 @@ public class Professor extends Pessoa{
     }
     
     //Calcula o salário líquido do professor.
-    public void calcularSalario(int tipo) {
+    public void calcularSalario() {
         if (salario <= 1556.94) {
             inss = salario / 100 * 8;
         } else if (salario > 1556.94 && salario <= 2594.92) {

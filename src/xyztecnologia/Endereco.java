@@ -20,8 +20,8 @@ public class Endereco {
         numero = JOptionPane.showInputDialog("Informe o número");
         complemento = JOptionPane.showInputDialog("Informe o complemento");
         bairro = JOptionPane.showInputDialog("Informe o bairro");
-        cidade = JOptionPane.showInputDialog("Informe o cidade");
-        uf = JOptionPane.showInputDialog("Informe o UF");
+        cidade = JOptionPane.showInputDialog("Informe a cidade");
+        uf = JOptionPane.showInputDialog("Informe o U.F.");
         cep = JOptionPane.showInputDialog("Informe o C.E.P.");
     }
     
