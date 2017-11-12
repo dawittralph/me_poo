@@ -1,0 +1,3 @@
+{"matricula":"1152113280","celular":"79981259318","nome":"Dawitt Ralph","dtNasc":"22/12/1985","idade":31,"rg":"31462782","cpf":"01557018510","fone":"79981259318","logradouro":"Rua João Batist ribeiro","numero":"65","complemento":"Vivace Morada Club","bairro":"Farolândia","cidade":"Aracaju","uf":"SE","cep":"49030355"}
+{"matricula":"3","celular":"3","nome":"Marilia Farias","dtNasc":"33/33/3333","idade":3,"rg":"3","cpf":"33333333333","fone":"3","logradouro":"3","numero":"3","complemento":"3","bairro":"3","cidade":"3","uf":"3","cep":"3"}
+{"matricula":"4","celular":"4","nome":"Josefa Jeane","dtNasc":"44/44/4444","idade":4,"rg":"4","cpf":"44444444444","fone":"4","logradouro":"4","numero":"4","complemento":"4","bairro":"4","cidade":"4","uf":"4","cep":"4"}

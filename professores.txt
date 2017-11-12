@@ -1,0 +1,1 @@
+{"lattes":"1","email":"1@1.com","formacao":"1","especialidade":"1","tipo":1,"salario":1000.0,"inss":80.0,"irrf":0.0,"salarioSemInss":920.0,"salarioLiquido":920.0,"nome":"Pablo Menezes","dtNasc":"11/11/1111","idade":1,"rg":"1","cpf":"11111111111","fone":"1","logradouro":"1","numero":"1","complemento":"1","bairro":"1","cidade":"1","uf":"1","cep":"1"}

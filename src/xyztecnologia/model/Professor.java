@@ -1,4 +1,4 @@
-package xyztecnologia;
+package xyztecnologia.model;
 
 import javax.swing.JOptionPane;
 import java.util.regex.Matcher;

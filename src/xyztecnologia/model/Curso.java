@@ -1,6 +1,9 @@
-package xyztecnologia;
+package xyztecnologia.model;
 
 import javax.swing.JOptionPane;
+import xyztecnologia.view.AlunoView;
+import xyztecnologia.view.CursoView;
+import xyztecnologia.view.ProfessorView;
 
 /**
  *
@@ -12,33 +15,15 @@ public class Curso{
     private double valor;
     private String descricao;
     
-    //Criação de um objeto pr do tipo Professor.
-    Professor pr = null;
-    Professor professor[] = new Professor[1];
-    
-    //Criação de um objeto al do tipo Aluno.
-    Aluno al = null;
-    Aluno aluno[] = new Aluno[30];
-    
     public void cadastrarCurso(){
         nome = JOptionPane.showInputDialog("Informe o nome do curso");
         cargaHoraria = Integer.parseInt(JOptionPane.showInputDialog("Informe a carga horária do curso"));
         valor = Double.parseDouble(JOptionPane.showInputDialog("Informe o valor do curso"));
         descricao = JOptionPane.showInputDialog("Informe a descrição do curso");
-        
-        pr = new Professor();
-        pr.cadastrarProfessor();
-        professor[0] = pr;
-        
-        for (int i = 0; i < aluno.length; i++) {
-            al = new Aluno();
-            al.cadastrarAluno();
-            aluno[i] = al;
-        }
     }
     
-    public void calcularCustoMinimo(){
-        JOptionPane.showMessageDialog(null, "A quantidade mínima de alunos é de: " + Math.round(professor[0].retornaSalarioBruto()/ valor));
+    public Double retornaValor(){
+        return valor;
     }
     
     public void exibirCurso(){
@@ -46,9 +31,5 @@ public class Curso{
               + "\nCarga Horária: " + cargaHoraria
               + "\nValor: R$" + valor
               + "\nDescrição: " + descricao);
-        professor[0].exibirProfessor();
-        for (int i = 0; i < aluno.length; i++) {
-            aluno[i].exibirAluno();
-        }
     }
 }

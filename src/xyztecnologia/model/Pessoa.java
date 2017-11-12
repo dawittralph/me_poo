@@ -1,5 +1,5 @@
 
-package xyztecnologia;
+package xyztecnologia.model;
 
 import javax.swing.JOptionPane;
 

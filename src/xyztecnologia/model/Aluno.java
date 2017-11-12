@@ -1,12 +1,13 @@
-package xyztecnologia;
+package xyztecnologia.model;
 
 import javax.swing.JOptionPane;
+import java.io.Serializable;
 
 /**
  *
  * @author Dawitt Ralph
  */
-public class Aluno extends Pessoa{
+public class Aluno extends Pessoa implements Serializable{
     private String matricula;
     private String celular;
     
@@ -21,6 +22,10 @@ public class Aluno extends Pessoa{
               + "\n" + super.exibirPessoa()
               + "\nMatrícula: " + matricula
               + "\nCelular: " + celular);
+    }
+
+    public void listarAluno() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
